@@ -81,11 +81,15 @@ function playRound(humanChoice, computerChoice) {
         const finalScore = document.createElement("p");
         scoreboard.appendChild(finalScore);
         finalScore.textContent = `Final Score: You ${humanScore} - Computer ${computerScore}\nYou win the game!`;
+        humanScore = 0;
+        computerScore = 0;
     } else if (computerScore === 5) {
         let scoreboard = document.querySelector(".scoreboard");
         const finalScore = document.createElement("p");
         scoreboard.appendChild(finalScore);
         finalScore.textContent = `Final Score: You ${humanScore} - Computer ${computerScore}\nComputer wins the game!`;
+        humanScore = 0;
+        computerScore = 0;
     }
 }
 
